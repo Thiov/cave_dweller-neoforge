@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+run/
+runs/
+.gradle/
+out/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Misc
+*.log
+.DS_Store
+.envrc
+
+# Local dependency jars (if any)
+**/libs/*.jar
+!**/libs/.gitkeep
