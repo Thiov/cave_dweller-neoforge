@@ -4,7 +4,7 @@ An unofficial NeoForge port of [Cave Dweller Evolved](https://www.curseforge.com
 by **SiverDX (Cadentem)**, ported to NeoForge and Minecraft 26.1.2.
 Sibling project of the [Fabric port](https://github.com/Thiov/cave_dweller-fabric).
 
-> **Looking for an older Minecraft version?** The [`1.21.10/`](1.21.10/) and [`1.20.1/`](1.20.1/)
+> **Looking for an older Minecraft version?** The [`1.21.11/`](1.21.11/), [`1.21.10/`](1.21.10/) and [`1.20.1/`](1.20.1/)
 > subdirectories are self-contained builds for those Minecraft versions.
 > The 1.20.1 jar targets Forge and also runs on NeoForge 1.20.1.
 
