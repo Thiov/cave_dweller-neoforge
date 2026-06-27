@@ -1,7 +1,7 @@
 # Cave Dweller (NeoForge Port — 1.21.11)
 
 Self-contained NeoForge build of Cave Dweller Evolved for **Minecraft 1.21.11**.
-Downported from the 26.1.2 port in the parent directory.
+Downported from the 26.1.2 port in [`../26.1.2/`](../26.1.2/).
 
 ## Requirements
 
