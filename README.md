@@ -1,12 +1,14 @@
 # Cave Dweller (NeoForge Port)
 
 An unofficial NeoForge port of [Cave Dweller Evolved](https://www.curseforge.com/minecraft/mc-mods/cave-dweller-evolved)
-by **SiverDX (Cadentem)**, ported to NeoForge and Minecraft 26.1.2.
+by **SiverDX (Cadentem)**, ported to NeoForge and Minecraft 26.2.
 Sibling project of the [Fabric port](https://github.com/Thiov/cave_dweller-fabric).
 
-> **Looking for an older Minecraft version?** The [`1.21.11/`](1.21.11/), [`1.21.10/`](1.21.10/) and [`1.20.1/`](1.20.1/)
+> **Looking for another Minecraft version?** The [`26.1.2/`](26.1.2/), [`26.1/`](26.1/), [`1.21.11/`](1.21.11/), [`1.21.10/`](1.21.10/) and [`1.20.1/`](1.20.1/)
 > subdirectories are self-contained builds for those Minecraft versions.
 > The 1.20.1 jar targets Forge and also runs on NeoForge 1.20.1.
+
+> NeoForge's 26.x line is still in beta; this build targets the latest 26.2 beta.
 
 > All gameplay design, model, animations, and sounds are by the original authors.
 > This project only adapts the existing code to NeoForge.
@@ -17,9 +19,9 @@ Sibling project of the [Fabric port](https://github.com/Thiov/cave_dweller-fabri
 
 ## Requirements
 
-- Minecraft **26.1.2**
-- NeoForge **26.1.2.75+**
-- GeckoLib **5.5.1** (NeoForge)
+- Minecraft **26.2**
+- NeoForge **26.2.0.7-beta+**
+- GeckoLib **5.5.3** (NeoForge)
 - Java **25**
 
 ## Features
@@ -35,7 +37,7 @@ Sibling project of the [Fabric port](https://github.com/Thiov/cave_dweller-fabri
 
 ```bash
 ./gradlew build
-# Output: build/libs/cave_dweller-1.6.4-neoforge-26.1.2.jar
+# Output: build/libs/cave_dweller-1.6.4-neoforge-26.2.jar
 ```
 
 The Gradle wrapper is included and the correct JDK is downloaded automatically
