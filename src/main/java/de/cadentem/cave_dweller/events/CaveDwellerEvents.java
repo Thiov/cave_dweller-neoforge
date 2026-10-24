@@ -33,7 +33,7 @@ public class CaveDwellerEvents {
                 if (HIT_COUNTER.get(caveDweller.getId()) > 5) {
                     HIT_COUNTER.remove(caveDweller.getId());
                     boolean couldTeleport = caveDweller.teleportToTarget();
-                    caveDweller.hurtMarked = true;
+                    caveDweller.syncVelocity = true;  // 26.3: Entity.hurtMarked -> syncVelocity
                     if (!couldTeleport) {
                         String key = caveDweller.level().dimension().identifier().toString();
                         if (ServerConfig.isValidDimension(key)) {

@@ -391,7 +391,7 @@ public class CaveDwellerEntity extends Monster implements GeoEntity {
         double d2 = getY() + ((double) getRandom().nextInt((int) radius) - radius / 2.0) - dir.y * radius;
         double d3 = getZ() + (getRandom().nextDouble() - 0.5) * (radius / 2.0) - dir.z * radius;
         BlockPos.MutableBlockPos validPosition = new BlockPos.MutableBlockPos(d1, d2, d3);
-        while (validPosition.getY() > this.level().getMinY() && !this.level().getBlockState(validPosition).blocksMotion()) {  // getMinY: from LevelHeightAccessor
+        while (validPosition.getY() > this.level().getMinY() && !this.level().getBlockState(validPosition).isSolid()) {  // 26.3: BlockState.blocksMotion() was removed; isSolid() replaces it
             validPosition.move(Direction.DOWN);
         }
         teleportTo(validPosition.getX(), validPosition.getY(), validPosition.getZ());

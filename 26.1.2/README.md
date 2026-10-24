@@ -1,7 +1,7 @@
 # Cave Dweller (NeoForge Port — 26.1.2)
 
 Self-contained NeoForge build of Cave Dweller Evolved for **Minecraft 26.1.2**.
-Same code era as the 26.2 port in the parent directory. (26.1.2 is the one 26.x
+Same code era as the 26.3 port in the parent directory (and the 26.2 port in [`../26.2/`](../26.2/)). (26.1.2 is the one 26.x
 Minecraft version with non-beta NeoForge release builds.)
 
 ## Requirements

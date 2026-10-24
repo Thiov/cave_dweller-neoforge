@@ -135,7 +135,7 @@ public class CaveDwellerChaseGoal extends Goal {
         double attackReach = getAttackReachSqr(target);
         if (distanceToTarget <= attackReach && ticksUntilNextAttack <= 0) {
             ticksUntilNextAttack = adjustedTickDelay(20);
-            caveDweller.swing(InteractionHand.MAIN_HAND);
+            caveDweller.swingForAttack(InteractionHand.MAIN_HAND);  // 26.3: swing(InteractionHand) was replaced by swing(hand, SwingAnimation)
             caveDweller.doHurtTarget((net.minecraft.server.level.ServerLevel) caveDweller.level(), target);
         }
     }

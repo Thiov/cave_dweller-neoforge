@@ -30,6 +30,6 @@ config="cave_dweller.mixins.json"
 [[dependencies.${mod_id}]]
     modId="geckolib"
     type="required"
-    versionRange="[5.5,)"
+    versionRange="[5.5.7,)"
     ordering="AFTER"
     side="BOTH"

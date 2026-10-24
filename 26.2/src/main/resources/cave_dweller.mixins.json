@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "de.cadentem.cave_dweller.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "mixins": [
+    "MixinLivingEntity",
+    "MixinPathNavigation",
+    "MixinGroundPathNavigation"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

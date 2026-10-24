@@ -1,0 +1,40 @@
+package de.cadentem.cave_dweller.entities.goals;
+
+import de.cadentem.cave_dweller.entities.CaveDwellerEntity;
+import de.cadentem.cave_dweller.util.Utils;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.player.Player;
+
+public class CaveDwellerTargetTooCloseGoal extends NearestAttackableTargetGoal<Player> {
+    private final CaveDwellerEntity caveDweller;
+    private final float distanceThreshold;
+
+    public CaveDwellerTargetTooCloseGoal(CaveDwellerEntity mob, float distanceThreshold) {
+        super(mob, Player.class, false);
+        this.caveDweller = mob;
+        this.distanceThreshold = distanceThreshold;
+    }
+
+    @Override
+    public boolean canUse() {
+        if (caveDweller.isInvisible()) return false;
+        LivingEntity target = caveDweller.level().getNearestPlayer(caveDweller, distanceThreshold);
+        if (Utils.isValidPlayer(target)) {
+            this.target = target;
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public void start() {
+        caveDweller.setAggressive(true);
+        caveDweller.currentRoll = Roll.CHASE;
+        caveDweller.setTarget(this.target);
+        super.start();
+    }
+
+    @Override
+    public boolean canContinueToUse() { return Utils.isValidPlayer(this.target); }
+}
